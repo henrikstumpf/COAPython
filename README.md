@@ -5,9 +5,13 @@ a lightweight coap implementation for micropython (esp8266 port)
 ____________________________________________________________________________
 
 Creating a new Resource:  
-    resource = CoapResource(path-name, server, handle get, handle put)  
-    server.addResource(resource)  
-    
+```Python
+resource = CoapResource(path-name, server, handle get, handle put)  
+server.addResource(resource)  
+```
+
 Starting the server:  
-    server = CoapServer(ip, port)  
-    server.start()
+```Python
+server = CoapServer(ip, port)  
+server.start()
+```
